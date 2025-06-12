@@ -1,0 +1,10 @@
+[package]
+name = "rust-port-scanner"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version="1.45.1", features = ["full"] }
+clap = { version = "4.5.39", features = ["derive", "wrap_help"] }
+futures = "0.3"
+trust-dns-resolver = { version = "0.23", features = ["tokio-runtime"] }
